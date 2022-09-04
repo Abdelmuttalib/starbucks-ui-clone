@@ -1,0 +1,117 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["next/core-web-vitals", "airbnb", "prettier"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["prettier", "testing-library"],
+  "globals": {
+    "JSX": true,
+    "NodeJS": true
+  },
+  "rules": {
+    "arrow-body-style": "off",
+    "no-unused-vars": "warn",
+    "no-alert": "off",
+    "no-param-reassign": "off",
+
+    "prettier/prettier": 1,
+
+    "padding-line-between-statements": [
+      1,
+      {
+        "blankLine": "never",
+        "prev": ["const", "let"],
+        "next": ["const", "let"]
+      },
+      {
+        "blankLine": "always",
+        "prev": [
+          "export",
+          "if",
+          "multiline-expression",
+          "multiline-const",
+          "multiline-let",
+          "block",
+          "block-like",
+          "cjs-import"
+        ],
+        "next": "*"
+      },
+      {
+        "blankLine": "never",
+        "prev": ["cjs-import"],
+        "next": ["cjs-import"]
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": [
+          "return",
+          "export",
+          "if",
+          "multiline-expression",
+          "multiline-const",
+          "multiline-let",
+          "block",
+          "block-like"
+        ]
+      }
+    ],
+
+    "import/extensions": "off",
+    "import/no-named-as-default": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "jsx-a11y/label-has-for": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+
+    "react/no-unescaped-entities": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react/jsx-fragments": "off",
+    "react/no-array-index-key": "off",
+    "import/no-unresolved": "off",
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".jsx", ".tsx"]
+      }
+    ],
+    "react/jsx-props-no-spreading": "off",
+    "react/no-unused-prop-types": "off",
+    "react/require-default-props": "off",
+    "react/default-props-match-prop-types": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
