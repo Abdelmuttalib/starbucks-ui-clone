@@ -9,7 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
     "@heroicons/react": "^2.0.8",
+    "@mui/material": "^5.10.4",
     "autoprefixer": "^10.4.8",
     "classnames": "^2.3.1",
     "next": "12.2.5",

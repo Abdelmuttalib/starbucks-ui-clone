@@ -70,9 +70,9 @@ const Footer = () => {
                 {new Date().getFullYear()}{' '}
                 <span className="ml-0.5">
                   {' '}
-                  Starbucks Coffee Company.{' '}
+                  Lorem ipsum{' '}
                   <span className="text-sm sm:text-base">
-                    All rights reserved.
+                    dolor sit amet consectetur adipisicing elit.
                   </span>
                 </span>
               </p>
