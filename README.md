@@ -1,7 +1,7 @@
 # StarBucks Homepage UI Clone
 https://nextjs-blog-three-mu-29.vercel.app/
 
-![starbuck-homepage-ui-clone](https://user-images.githubusercontent.com/54845047/199564204-5fa06418-1dc3-4c17-82f1-e2375047e1b3.png)
+![starbuck-homepage-ui-clone](https://user-images.githubusercontent.com/54845047/199565205-2ab90a39-59f4-4195-9ff2-bae33e160a44.png)
 
 
 ## Getting Started
