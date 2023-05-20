@@ -36,7 +36,7 @@ const Footer = () => {
 
         <div>
           {/* Social Media Links */}
-          <div className="py-10 w-full h-auto min-h-[10rem] flex flex-col gap-8 px-5">
+          <div className="py-10 w-full h-auto min-h-[10rem] flex flex-col gap-8">
             <div className="flex gap-5">
               {[1, 2, 3, 4, 5, 6].map((i: number) => (
                 <div className="rounded-full hover:ring-8 hover:ring-gray-200 cursor-pointer ease-linear duration-200 flex justify-center items-center">

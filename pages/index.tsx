@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         <Banner
           title="Fall at your fingertips"
           description="Ordering your fall favorites is a snap with the app. Join Starbucks® Rewards and tap into fall."
-          link={{ href: '#', label: 'Join now' }}
+          link={{ href: '', label: 'Join now' }}
           image={{
             src: 'coffee-order.jpg',
             alt: 'order your coffee online',
@@ -23,7 +23,7 @@ const Home: NextPage = () => {
           title="Welcome home, pumpkin"
           description=" Fall favorites return with the blissful Pumpkin Spice Latte and
             smooth Pumpkin Cream Cold Brew."
-          link={{ href: '#', label: 'Learn More' }}
+          link={{ href: '', label: 'Learn More' }}
           image={{
             src: 'cold-hot-coffee.jpg',
             alt: 'hot and cold coffee',
@@ -32,7 +32,7 @@ const Home: NextPage = () => {
         <Banner
           title="Layers of baked apple yum"
           description="Try the Apple Crisp Oatmilk Macchiato, now nondairy and with Starbucks® Blonde Espresso."
-          link={{ href: '#', label: 'Learn More' }}
+          link={{ href: '', label: 'Learn More' }}
           image={{
             src: 'apple-yam-coffee.jpg',
             alt: 'backed apple yam',
@@ -42,7 +42,7 @@ const Home: NextPage = () => {
         <Banner
           title="Picks of the patch"
           description="Choose a comforting classic: Pumpkin Cream Cheese Muffin, Pumpkin & Pepita Loaf or Pumpkin Scone."
-          link={{ href: '#', label: 'Learn More' }}
+          link={{ href: '', label: 'Learn More' }}
           image={{
             src: 'desserts.webp',
             alt: 'Muffins and more',
@@ -51,7 +51,7 @@ const Home: NextPage = () => {
         <Banner
           title="The art of the roast"
           description="With a new roast spectrum front and center on our coffee bags, it’s easier than ever to find a taste you love."
-          link={{ href: '#', label: 'Order now' }}
+          link={{ href: '', label: 'Order now' }}
           image={{
             src: 'coffee-bags.webp',
             alt: 'fresh Coffee bags',

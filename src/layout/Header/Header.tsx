@@ -5,26 +5,28 @@ import { LinkT } from '../../types.common';
 import classNames from 'classnames';
 
 const links: LinkT[] = [
-  { href: '/menu', label: 'Menu' },
-  { href: '#', label: 'Rewards' },
-  { href: '#', label: 'Gift Cards' },
+  { href: '', label: 'Menu' },
+  { href: '', label: 'Rewards' },
+  { href: '', label: 'Gift Cards' },
 ];
 
 const Header = () => {
   return (
     <>
-      <header className="w-full h-20 lg:h-[6.5rem] shadow">
+      <header className="w-full h-44 md:h-[6.5rem] shadow py-4 md:py-0">
         <div className="w-full h-full flex max-w-[1710px] mx-auto">
           {/* logo, Desktop */}
           {/* Left Logo with Placeholder on Large Desktop */}
           <div className="w-full max-w-[125px] items-center justify-end hidden 3xl:flex pr-9">
             <div className="w-[3.2rem] h-[3.2rem] bg-primary rounded-full"></div>
           </div>
-          <div className="w-full max-w-8xl mx-auto flex items-center justify-between h-full px-6 xl:px-10 3xl:px-0">
+          <div className="w-full max-w-8xl mx-auto flex flex-col md:flex-row items-center justify-between h-full px-6 xl:px-10 3xl:px-0">
             {/* Left side nav */}
-            <div className="flex items-center gap-6 lg:gap-10 h-full">
+            <div className="flex flex-col md:flex-row items-center md:gap-10 h-full">
               {/* logo, Mobile */}
-              <div className="w-14 h-14 rounded-full block 3xl:hidden"></div>
+              <div>
+                <div className="w-14 h-14 rounded-full block 3xl:hidden bg-primary"></div>
+              </div>
               <ul className="flex gap-8 h-full items-center justify-center">
                 {links.map(({ href, label }: LinkT, index) => (
                   <li key={index} className="block h-full">
@@ -42,9 +44,9 @@ const Header = () => {
               </ul>
             </div>
             {/* Right side nav */}
-            <div className="flex items-center gap-10">
-              <div>
-                <Link href="#">
+            <div className="flex flex-col items-center gap-3 sm:flex-row sm:gap-10">
+              <div className="">
+                <Link href="">
                   <a className="flex items-center gap-2 hover:text-primary">
                     <MapPinIcon className="w-6" />
                     <p className="text-sm font-semibold">Find a store</p>
@@ -52,12 +54,12 @@ const Header = () => {
                 </Link>
               </div>
               <div className="flex items-center gap-5">
-                <Link href="#">
+                <Link href="">
                   <a className="rounded-full text-sm border border-black text-black px-4 py-1 tracking-wide font-semibold hover:bg-gray-100 ease-linear duration-100">
                     Sign in
                   </a>
                 </Link>
-                <Link href="#">
+                <Link href="">
                   <a className="rounded-full text-sm border border-black text-white bg-black px-4 py-1 tracking-wide font-semibold hover:bg-opacity-80 ease-linear duration-100">
                     Join now
                   </a>

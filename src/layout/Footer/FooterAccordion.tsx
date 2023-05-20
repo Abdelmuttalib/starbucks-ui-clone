@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import cn from 'classnames';
 import Link from 'next/link';
-import classNames from 'classnames';
 import { LinkT } from '../../types.common';
 
 type AccordionProps = {
